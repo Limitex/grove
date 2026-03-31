@@ -4,6 +4,8 @@ A worktree-first Git GUI built with Tauri.
 
 > **Work on multiple branches simultaneously — each in its own directory, visible at a glance.**
 
+![Grove screenshot](assets/screenshot.png)
+
 ## Why Grove?
 
 Every Git GUI treats worktrees as an afterthought. Branch switching is the default, and worktree support is buried in a submenu.
