@@ -23,7 +23,7 @@ jobs:
     outputs:
       release-id: ${{ steps.create.outputs.id }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Create draft release with generated notes
         id: create
         env:
@@ -51,7 +51,7 @@ jobs:
             target: x86_64-pc-windows-msvc
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: ./.github/actions/setup
         with:
           rust-targets: ${{ matrix.target }}
