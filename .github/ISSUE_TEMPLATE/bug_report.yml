@@ -1,0 +1,52 @@
+name: Bug Report
+description: Report a bug in Grove
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this?
+      placeholder: |
+        1. Open Grove
+        2. Click on ...
+        3. See error
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: "e.g. Arch Linux, macOS 14, Windows 11"
+    validations:
+      required: true
+
+  - type: input
+    id: grove-version
+    attributes:
+      label: Grove Version
+      placeholder: "e.g. 0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU / Display setup
+      placeholder: "e.g. NVIDIA RTX 4090 + Wayland, Intel integrated + X11"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error logs
+      description: Any error messages from the console or terminal
+      render: text
